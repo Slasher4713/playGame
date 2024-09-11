@@ -49,7 +49,11 @@ namespace playGame
             Refresh();
             Thread.Sleep(1000);
             SoundPlayer wi = new SoundPlayer(Properties.Resources.Wind);
-            wi.Play();  
+            wi.Play();
+            spongebobLabel.Visible = true;
+            Refresh();
+            Thread.Sleep(1000);
+            spongebobLabel.Visible = false;
            
         }
 
@@ -73,6 +77,11 @@ namespace playGame
             Refresh();
             SoundPlayer ps = new SoundPlayer(Properties.Resources.Gun);
             ps.Play();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

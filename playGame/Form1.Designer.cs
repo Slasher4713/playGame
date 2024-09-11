@@ -32,6 +32,7 @@
             this.startingInLabel = new System.Windows.Forms.Label();
             this.startButton = new System.Windows.Forms.Button();
             this.hideButton = new System.Windows.Forms.Button();
+            this.spongebobLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // startingInLabel
@@ -45,7 +46,6 @@
             this.startingInLabel.TabIndex = 1;
             this.startingInLabel.Text = "Starting in: 3";
             this.startingInLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            //this.startingInLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // startButton
             // 
@@ -70,12 +70,24 @@
             this.hideButton.UseVisualStyleBackColor = false;
             this.hideButton.Visible = false;
             // 
+            // spongebobLabel
+            // 
+            this.spongebobLabel.Image = global::playGame.Properties.Resources.Spongebob;
+            this.spongebobLabel.Location = new System.Drawing.Point(-7, -8);
+            this.spongebobLabel.Name = "spongebobLabel";
+            this.spongebobLabel.Size = new System.Drawing.Size(853, 477);
+            this.spongebobLabel.TabIndex = 4;
+            this.spongebobLabel.Text = "  ";
+            this.spongebobLabel.Visible = false;
+            this.spongebobLabel.Click += new System.EventHandler(this.label1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.spongebobLabel);
             this.Controls.Add(this.hideButton);
             this.Controls.Add(this.startButton);
             this.Controls.Add(this.startingInLabel);
@@ -93,6 +105,7 @@
         private System.Windows.Forms.Label startingInLabel;
         private System.Windows.Forms.Button startButton;
         private System.Windows.Forms.Button hideButton;
+        private System.Windows.Forms.Label spongebobLabel;
     }
 }
 
